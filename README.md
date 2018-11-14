@@ -29,4 +29,6 @@ add a permission in manifest
 
 	  <uses-permission android:name="android.permission.INTERNET" />
 		
-		Then create a service that inherits signalRService
+		
+
+Then create a service that inherits signalRService
