@@ -3,7 +3,7 @@ Easier use for sending notifications with signalR
 
 # dependencies
 
-
+```
 allprojects 
 {
 
@@ -18,25 +18,21 @@ allprojects
 	
 	dependencies {
 	        implementation 'com.github.arashAzizimanesh:SignalRStart:1.0.0'
-	}
-	
-	
-	
+	}	
+```
 # use
 	
 add a permission in manifest
 
-
-	  <uses-permission android:name="android.permission.INTERNET" />
-		
-		
-
-
-Then create a service that inherits signalRService
+```
+<uses-permission android:name="android.permission.INTERNET" />	
+```
+	
 
 
 
-       public class MyService extends SignalRService {
+```
+public class MyService extends SignalRService {
        @Override
     public void onMessageRecive(JsonElement json) {
 
@@ -44,16 +40,17 @@ Then create a service that inherits signalRService
 
      }
     }
-    
-    
+    ``` 
 
 
 
 
 Then create an object from the SignalRstart in Activity and give it its full service path
-
+```
   SignalRStart signalRStart = new SignalRStart(this);
         signalRStart.start("your url server","ir.appmoon.signalrexample.service.MyService");
         
+   ```     
         
-        
+	
+
